@@ -16,6 +16,7 @@ Descrizione progetto qui......
   
   * **Risposta**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In caso negativo viene generato un messaggio HTTP 1.1 400 `{ err_msg : message here }`  
 </details>
+<br />  
 
 <details>
   <summary>POST /signin</summary>
@@ -29,6 +30,7 @@ Descrizione progetto qui......
   
   * **Risposta**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In caso negativo viene generato un messaggio HTTP 1.1 400  `{ err_msg : message here }`  
 </details>
+<br />  
 
 <details>
   <summary>POST /file/{chunk_id}/{chunk_size}/{file_pathBASE64}/{timestamp_locale}</summary>
@@ -36,12 +38,13 @@ Descrizione progetto qui......
   
   * **Descrizione**:&nbsp;&nbsp;&nbsp;*endpoint che permette di aggiungere un file appena creato, `{chunk_id}` corrisponde al numero di chunk che stiamo inviando, 0 per il primo chunk. Il parametro `{chunk_size}` corrisponde alla dimensione del chunk che stiamo inviando, questo corrisponde a `full` se si invia un chunk di dimensione massima (0.5MB), altrimenti la dimensione in byte.*  
   <br />  
-  
+
   * **Parametri**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{ user : username , pass1 : password }`  
   <br />  
   
   * **Risposta**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTTP headers: MIME: application/octect-stream body: `binary data here`  
 </details>
+<br />  
 
 L'environment scelto per lo sviluppo dell'applicativo si basa su [Docker](https://www.docker.com/why-docker) [container](https://www.docker.com/resources/what-container). La scelta ricade su questo tipo di tecnologia per i seguenti motivi:
 
