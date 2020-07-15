@@ -1,7 +1,7 @@
 
 ## Team
 
-Marco Nanci Clemente
+Marco Nanci Clemente <img src="piero_gangemi.jpg" alt="alt text" width="20" height="20">
 
 Alessandra Musone
 
