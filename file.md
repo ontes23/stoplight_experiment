@@ -40,7 +40,7 @@ Descrizione progetto qui......
   * **Parametri**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`{ user : username , pass1 : password }`  
   <br />  
   
-  * **Risposta**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTTP headers: MIME: application/octect-stream body: 'binary data here'  
+  * **Risposta**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTTP headers: MIME: application/octect-stream body: `binary data here`  
 </details>
 
 L'environment scelto per lo sviluppo dell'applicativo si basa su [Docker](https://www.docker.com/why-docker) [container](https://www.docker.com/resources/what-container). La scelta ricade su questo tipo di tecnologia per i seguenti motivi:
