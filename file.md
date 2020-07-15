@@ -4,6 +4,7 @@ Descrizione progetto qui......
 
 ## Environment
 
+
 L'environment scelto per lo sviluppo dell'applicativo si basa su [Docker](https://www.docker.com/why-docker) [container](https://www.docker.com/resources/what-container). La scelta ricade su questo tipo di tecnologia per i seguenti motivi:
 
 - **virtualizzazione:** tramite virtualizzazione si abbattono le differenze provenienti dai vari sistemi, di conseguenza ogni sviluppatore può interagire con lo stesso identico environment che utilizzeranno anche gli altri. Questo permette di evitare conflitti dovuti a diverse versioni di librerie e permette di evitare il classico problema del *"Funziona sul mio pc"*.
@@ -51,11 +52,48 @@ Le tabelle all'interno del DBMS sono le seguenti:
 
 **username:** In questa collection troviamo un id interno che rappresenta un utente, un username scelto dall'utente stesso, la password memorizzata memorizzata tramite hash, il sale e il campo più importante che è l'hashed_status, questo rappresenta lo stato della cartella di riferimento dell'utente. Tramite questo campo si riesce a capire se sono stati effettuati cambiamenti all'interno della cartella. Questo campo viene calcolato a partire da checksum di riferimento dei vari file e directory presenti all'interno della directory dell'utente.
 
-| id | username | password | salt | hashed_status |
-| :---: | :---: | :---: | :---: | :---: |
-| 0 | myuser | pass_hash_value | 3 | 123456898fgasd |
-
-
+ 
+```json json_schema
+{
+    "title": "POST /signup",
+    "type": "object",
+    "properties": {
+        "descrizione": {
+            "type": " ",
+            "description": "endpoint che permette di registrare un nuovo utente."
+        },
+        "parametri": {
+            "type": "string",
+            "description": " {'user':'username', 'pass1':'password','pass2':'password'}"
+        },
+        "risposta": {
+            "type": "number",
+            "description": "in caso negativo HTTP 1.1 400 '{'err_msg':'message here'}'"
+        }
+    },
+}
+```
+```json json_schema
+{
+    "title": "POST /signin",
+    "type": "object",
+    "options": {"hidden": true},
+    "properties": {
+        "descrizione": {
+            "type": " ",
+            "description": "endpoint che permette di registrare un nuovo utente."
+        },
+        "parametri": {
+            "type": "string",
+            "description": " `{'user':'username', 'pass1':'password'}`"
+        },
+        "risposta": {
+            "type": "number",
+            "description": "in caso negativo HTTP 1.1 400 '{'err_msg':'message here'}'"
+        }
+    },
+}
+```
 
 ## Descrizione processi
 
