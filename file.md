@@ -8,13 +8,13 @@ Descrizione progetto qui......
   <summary>POST /signup</summary>
   <br />  
   
-  * **Descrizione**:&nbsp;&nbsp;&nbsp;Endpoint che permette di registrare un nuovo utente.   
+  * **Descrizione**:&nbsp;&nbsp;&nbsp;*Endpoint che permette di registrare un nuovo utente*  
   <br />  
   
-  * **Parametri**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'user':'username', 'pass1':'password','pass2':'password'}  
+  * **Parametri**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ *user* : **username** , *pass1* : **password** , *pass2* : **password** }  
   <br />  
   
-  * **Risposta**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In caso negativo HTTP 1.1 400 '{'err_msg':'message here'}'  
+  * **Risposta**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In caso negativo viene generato un messaggio HTTP 1.1 400 ' { *err_msg* : **message here** } '  
 </details>
 
 L'environment scelto per lo sviluppo dell'applicativo si basa su [Docker](https://www.docker.com/why-docker) [container](https://www.docker.com/resources/what-container). La scelta ricade su questo tipo di tecnologia per i seguenti motivi:
